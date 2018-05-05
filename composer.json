@@ -1,0 +1,42 @@
+{
+    "name" : "php-docker",
+    "authors": [
+        {
+            "name": "Aurélien Lair",
+            "email": "aurelien.lair@nomail.com"
+        }
+    ],
+    "description": "PHP Docker container template",
+    "type": "script",
+    "prefer-stable": true,
+	"repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:onebip/onebip-array.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:onebip/onebip-clock.git"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "symfony/console": "@stable",
+        "onebip/onebip-array": "dev-master",
+        "onebip/onebip-clock": "dev-master",
+        "friendsofphp/php-cs-fixer": ">=2.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "PHPDocker\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "@stable"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "\\Tests\\": "tests/"
+        }
+    }
+}

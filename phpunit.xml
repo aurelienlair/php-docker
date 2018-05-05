@@ -1,0 +1,23 @@
+<phpunit colors="true" bootstrap="tests/setup/bootstrap.php" backupGlobals="false">
+  <testsuites>
+    <testsuite name="unit">
+      <directory>tests/unit</directory>
+    </testsuite>
+    <testsuite name="integration">
+      <directory>tests/integration</directory>
+    </testsuite>
+    <testsuite name="acceptance">
+      <directory>tests/acceptance</directory>
+    </testsuite>
+  </testsuites>
+  
+  <filter>
+    <whitelist addUncoveredFilesFromWhitelist="false">
+      <directory suffix=".php">src/</directory>
+    </whitelist>
+  </filter>
+  
+  <logging>
+    <log type="tap" target="/tmp/.php-docker-phpunit-test-log.tap" />
+  </logging>
+</phpunit>

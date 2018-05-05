@@ -1,0 +1,5 @@
+.git
+.dockerignore
+#config/bash-tools.sh
+README.md
+Dockerfile
