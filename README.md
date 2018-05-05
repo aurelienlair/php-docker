@@ -44,4 +44,5 @@ $ /snap/sbin/docker run -it -v /home/aurelien/my-projects/php-docker:/usr/src/ph
 ```
 ## Requires
 [Docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/) 
+
 [Git](https://git-scm.com/) 
