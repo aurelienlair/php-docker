@@ -26,7 +26,7 @@ $ /snap/bin/docker build --rm -t php-docker-image:latest .
 Run a bash session within the container called php-docker-container then run PHPunit:
 
 ```
-$ /snap/sbin/docker run -it --rm --name php-docker-container php-docker-image:latest bash -l
+$ /snap/bin/docker run -it --rm --name php-docker-container php-docker-image:latest bash -l
 $ phpunit
 ```
 
@@ -37,7 +37,7 @@ created 2 aliases from the container on purpose (see bash-tools file).
 The only thing you will need to do is to mount your volume (source directory) into 
 the Docker container:
 ```
-$ /snap/sbin/docker run -it -v /home/aurelien/my-projects/php-docker:/usr/src/php-docker-src \
+$ /snap/bin/docker run -it -v /home/aurelien/my-projects/php-docker:/usr/src/php-docker-src \
     --rm --name php-docker-container \
     php-docker-image:latest \
     bash -l
